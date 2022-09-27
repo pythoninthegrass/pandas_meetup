@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-export VIRTUAL_ENV="/opt/venv"
-export PATH="${VIRTUAL_ENV}/bin:$HOME/.asdf/bin:$HOME/.asdf/shims:$PATH"
+# TODO: debug server not loading on host
 
-# source .venv/bin/activate
+echo "Container's IP address: $(awk 'END{print $1}' /etc/hosts)"
 
-gunicorn -w 2 -k uvicorn.workers.UvicornWorker main:app -b 0.0.0.0:${PORT:-3000} --log-file -
+# start jupyter lab
+# jupyter lab --ip=0.0.0.0 --port=${PORT:-8888} --no-browser --ServerApp.token=${JUPYTER_TOKEN:-} --ServerApp.password=''
+jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root

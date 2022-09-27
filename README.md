@@ -1,57 +1,101 @@
-# python_template
+# pandas_meetup
 
-!["It's dangerous to go alone! Take this."](img/zelda.jpg)
-<!-- <img src="https://user-images.githubusercontent.com/4097471/144654508-823c6e31-5e10-404c-9f9f-0d6b9d6ce617.jpg" width="300"> -->
+![JupyterLab](img/jupyterlab.png)
 
 ## Summary
-Oftentimes the initial setup of a Python repo can take a few minutes to a couple hours.
-By laying the foundation to rapidly implement an idea, can focus on the good bits instead of
-devops drudgery.
-
-### Caveat Emptor
-Very little of this gets tested on Windows hosts. Windows Subsystem for Linux (WSL) is used where necessary with the default Ubuntu LTS install. Moved bulk of document to the [markdown](markdown/) directory to opt-in vs. opt-out of documentation.
-
-Be the change et al if Windows is your main and you wanna raise a PR with broad instructions on getting tooling working under Windows (e.g., docker, poetry, playwright.)
+Udacity course on data science.
 
 **Table of Contents**
-* [python_template](#python_template)
+* [pandas_meetup](#pandas_meetup)
   * [Summary](#summary)
-    * [Caveat Emptor](#caveat-emptor)
   * [Setup](#setup)
   * [Usage](#usage)
-    * [Mac and Linux users](#mac-and-linux-users)
+    * [Poetry](#poetry)
+    * [Docker](#docker)
+    * [Both](#both)
   * [TODO](#todo)
+  * [Further Reading](#further-reading)
 
 ## Setup
 * Install
     * [editorconfig](https://editorconfig.org/)
-    * [wsl](https://docs.microsoft.com/en-us/windows/wsl/setup/environment)
     * [asdf](https://asdf-vm.com/guide/getting-started.html#_2-download-asdf)
     * [poetry](https://python-poetry.org/docs/)
-    * [docker-compose](https://docs.docker.com/compose/install/)
-    * [playwright](https://playwright.dev/python/docs/intro#installation)
-    * [Kubernetes (k8s)](markdown/kubernetes.md)
+    * [docker](https://docs.docker.com/compose/install/)
+    * [just](https://just.systems/man/en)
+* Download CSVs from [here](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/)
+  * Move to `csv` directory
 
 ## Usage
-### Mac and Linux users
-Development environments and tooling are first-class citizens on macOS and *nix. For Windows faithfuls, please setup [WSL](markdown/wsl.md).
+### Poetry
+* Install requirements via Poetry: 
+    ```bash
+    poetry install
+    poetry run ipython kernel install --name "python3.10.7" --user
+    ```
+* Run Jupyter Lab
+    ```bash
+    poetry shell
+    jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
+    ```
+* Quit the server via `ctrl-c` in the terminal
+* Enter `deactivate` to exit the Poetry virtual environment
+
+### Docker
+* Customize the `.env.example` and rename to `.env`
+* General commands
+    ```bash
+    # build image locally
+    docker-compose build --pull --no-cache
+
+    # start container
+    docker-compose up -d
+
+    # stop container
+    docker-compose stop
+
+    # remove container and network
+    docker-compose down
+    ```
+* `justfile` syntax (recommended)
+    ```bash
+    # help
+    just
+
+    # build image locally (no-cache)
+    just build-clean
+
+    # build image locally
+    just build
+
+    # start container
+    just start
+
+    # ssh
+    just exec
+
+    # stop container
+    just stop
+
+    # stop container, remove container and network
+    just down
+    ```
+
+### Both
+* Open a browser and navigate to `http://127.0.0.1:8888`
+  * Docker uses the token specified in `.env`
+* Select the "python3.10.7" kernel if asked
+* Open ~~`refactor-wine-quality.ipynb`~~ `pandas_intro.ipynb` from the left-hand column
+* Run cells by selecting them and pressing `shift-enter`
 
 ## TODO
-* Django
-    * Merge with [docker_python](https://github.com/pythoninthegrass/docker_python) and put the latter on an ice float
-* Flask
-    * Bonus points for [Svelte](https://svelte.dev/blog/the-easiest-way-to-get-started) front-end ❤️
-* FastAPI
-* MongoDB
-  * Switch to `docker-compose`
-  * Fix unique index deleting too many keys
-* k8s
-  * `~/.kubeconfig`
-* ansible
-* wsl
-  * VSCode
-      * Remote WSL install and usage
-        * Or at least further reading nods
-* Debugging
-   * Dependencies
-   * script itself via [icecream](https://github.com/gruns/icecream)
+* Get Jupyter working in [VSCode](https://github.com/microsoft/vscode-jupyter)
+
+## Further Reading
+[Original Repo](https://github.com/realpython/materials/tree/master/pandas-intro)
+
+[Starting JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html)
+
+[Jupyter Docker Stacks — Docker Stacks documentation](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
+
+[Dockerizing Jupyter Projects](https://towardsdatascience.com/dockerizing-jupyter-projects-39aad547484a)

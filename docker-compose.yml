@@ -2,16 +2,16 @@ version: "3.9"
 
 services:
   app:
-    container_name: hello-cont
-    image: docker_python
+    container_name: pd_meetup
+    image: jupyter/minimal-notebook:latest
     tty: false               # false for `entrypoint` in Dockerfile
     stdin_open: false        # false for `entrypoint` in Dockerfile
     env_file:
       - ./.env
-    volumes:
-      - .:/home/appuser/app
+    # volumes:
+    #   - .:/home/jovyan/work
     ports:
-      - 3000:3000
+      - 8888:${PORT:-8888}
     build:
       context: ./
       dockerfile: ./Dockerfile
