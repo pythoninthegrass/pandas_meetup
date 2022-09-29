@@ -1,15 +1,10 @@
 # ETC
-django/composeexample/
-django/data/
-django/manage.py
 *.sqlite
-redis*
-!redis.conf.example
 *.pem
 *.key
 raw/
 gitleaks_report*.json
-nba_all_elo.csv
+nba*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
