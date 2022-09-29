@@ -23,8 +23,6 @@ Udacity course on data science.
     * [poetry](https://python-poetry.org/docs/)
     * [docker](https://docs.docker.com/compose/install/)
     * [just](https://just.systems/man/en)
-* Download CSVs from [here](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/)
-  * Move to `csv` directory
 
 ## Usage
 ### Poetry
@@ -85,12 +83,13 @@ Udacity course on data science.
 * Open a browser and navigate to `http://127.0.0.1:8888`
   * Docker uses the token specified in `.env`
 * Select the "python3.10.7" kernel if asked
-* Open ~~`refactor-wine-quality.ipynb`~~ `pandas_intro.ipynb` from the left-hand column
+* Open `pandas_intro.ipynb` from the left-hand column
 * Run cells by selecting them and pressing `shift-enter`
 
 ## TODO
 * ~~Get Jupyter working in [VSCode](https://github.com/microsoft/vscode-jupyter)~~
   * Multiple `localhost` entries in `/etc/hosts` 😭
+* Refactor for [Real Python tutorial](https://github.com/realpython/materials/tree/master/pandas-intro)
 
 ## Further Reading
 [Original Repo](https://github.com/realpython/materials/tree/master/pandas-intro)
