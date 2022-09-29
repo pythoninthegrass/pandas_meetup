@@ -89,7 +89,8 @@ Udacity course on data science.
 * Run cells by selecting them and pressing `shift-enter`
 
 ## TODO
-* Get Jupyter working in [VSCode](https://github.com/microsoft/vscode-jupyter)
+* ~~Get Jupyter working in [VSCode](https://github.com/microsoft/vscode-jupyter)~~
+  * Multiple `localhost` entries in `/etc/hosts` 😭
 
 ## Further Reading
 [Original Repo](https://github.com/realpython/materials/tree/master/pandas-intro)
