@@ -1,9 +1,9 @@
 # pandas_meetup
 
-![JupyterLab](img/jupyterlab.png)
+![Meetup Photo](img/eats_shoots_and_leaves.png)
 
 ## Summary
-Pandas 101 with a smattering of devops and terminal user interface (TUI.)
+Pandas 101 with a smattering of DevOps and TUI
 
 **Table of Contents**
 * [pandas_meetup](#pandas_meetup)
@@ -82,14 +82,13 @@ Pandas 101 with a smattering of devops and terminal user interface (TUI.)
 ### Both
 * Open a browser and navigate to `http://127.0.0.1:8888`
   * Docker uses the token specified in `.env`
-* Select the "python3.10.7" kernel if asked
-* Open `pandas_intro.ipynb` from the left-hand column
+* Select the `python3.10.7` kernel if asked
+* Open `demo_pandas.ipynb` from the left-hand column
 * Run cells by selecting them and pressing `shift-enter`
 
 ## TODO
-* ~~Get Jupyter working in [VSCode](https://github.com/microsoft/vscode-jupyter)~~
-  * Multiple `localhost` entries in `/etc/hosts` 😭
-* ~~Refactor for [Real Python tutorial](https://github.com/realpython/materials/tree/master/pandas-intro)~~
+* Polish. Probably.
+* Fix *bonus* code (audience participation??)
 
 ## Further Reading
 [Original Repo](https://github.com/realpython/materials/tree/master/pandas-intro)
@@ -106,4 +105,4 @@ Pandas 101 with a smattering of devops and terminal user interface (TUI.)
 
 [pandas GroupBy: Your Guide to Grouping Data in Python – Real Python](https://realpython.com/pandas-groupby/)
 
-[SQL Versions of the Most Frequently Used Pandas Functions | by Soner Yıldırım | Towards Data Science](https://towardsdatascience.com/sql-versions-of-the-most-frequently-used-pandas-functions-bb6399f87461)
+[SQL Versions of the Most Frequently Used Pandas Functions | Towards Data Science](https://towardsdatascience.com/sql-versions-of-the-most-frequently-used-pandas-functions-bb6399f87461)
