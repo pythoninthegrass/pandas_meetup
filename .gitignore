@@ -4,6 +4,7 @@
 *.key
 raw/
 gitleaks_report*.json
+ea*.csv
 nba*.csv
 
 # Byte-compiled / optimized / DLL files

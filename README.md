@@ -3,7 +3,7 @@
 ![JupyterLab](img/jupyterlab.png)
 
 ## Summary
-Udacity course on data science.
+Pandas 101 with a smattering of devops and terminal user interface (TUI.)
 
 **Table of Contents**
 * [pandas_meetup](#pandas_meetup)
@@ -89,7 +89,7 @@ Udacity course on data science.
 ## TODO
 * ~~Get Jupyter working in [VSCode](https://github.com/microsoft/vscode-jupyter)~~
   * Multiple `localhost` entries in `/etc/hosts` 😭
-* Refactor for [Real Python tutorial](https://github.com/realpython/materials/tree/master/pandas-intro)
+* ~~Refactor for [Real Python tutorial](https://github.com/realpython/materials/tree/master/pandas-intro)~~
 
 ## Further Reading
 [Original Repo](https://github.com/realpython/materials/tree/master/pandas-intro)
@@ -99,3 +99,11 @@ Udacity course on data science.
 [Jupyter Docker Stacks — Docker Stacks documentation](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
 
 [Dockerizing Jupyter Projects](https://towardsdatascience.com/dockerizing-jupyter-projects-39aad547484a)
+
+[The Spotify Hit Predictor Dataset (1960-2019) | Kaggle](https://www.kaggle.com/datasets/theoverman/the-spotify-hit-predictor-dataset)
+
+[Using Pandas and Python to Explore Your Dataset – Real Python](https://realpython.com/pandas-python-explore-dataset/)
+
+[pandas GroupBy: Your Guide to Grouping Data in Python – Real Python](https://realpython.com/pandas-groupby/)
+
+[SQL Versions of the Most Frequently Used Pandas Functions | by Soner Yıldırım | Towards Data Science](https://towardsdatascience.com/sql-versions-of-the-most-frequently-used-pandas-functions-bb6399f87461)

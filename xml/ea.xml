@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<computer_extension_attributes>
+  <size>50</size>
+  <computer_extension_attribute>
+    <id>102</id>
+    <name>[Test] EA Py2 to Py3</name>
+    <enabled>true</enabled>
+  </computer_extension_attribute>
+  <computer_extension_attribute>
+    <id>73</id>
+    <name>32-bit apps</name>
+    <enabled>true</enabled>
+  </computer_extension_attribute>
+  <computer_extension_attribute>
+    <id>38</id>
+    <name>Active IP addresses</name>
+    <enabled>true</enabled>
+  </computer_extension_attribute>
+  <computer_extension_attribute>
+    <id>52</id>
+    <name>adobe-flash</name>
+    <enabled>true</enabled>
+  </computer_extension_attribute>
+</computer_extension_attributes>
