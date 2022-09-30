@@ -96,11 +96,11 @@ Pandas 101 with a smattering of devops and terminal user interface (TUI.)
 
 [Starting JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html)
 
-[Jupyter Docker Stacks — Docker Stacks documentation](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
-
 [Dockerizing Jupyter Projects](https://towardsdatascience.com/dockerizing-jupyter-projects-39aad547484a)
 
-[The Spotify Hit Predictor Dataset (1960-2019) | Kaggle](https://www.kaggle.com/datasets/theoverman/the-spotify-hit-predictor-dataset)
+[The Spotify Hit Predictor Dataset (1960-2019)](https://www.kaggle.com/datasets/theoverman/the-spotify-hit-predictor-dataset)
+
+[Jupyter Docker Stacks — Docker Stacks documentation](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
 
 [Using Pandas and Python to Explore Your Dataset – Real Python](https://realpython.com/pandas-python-explore-dataset/)
 
