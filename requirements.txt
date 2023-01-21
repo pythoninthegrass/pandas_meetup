@@ -51,7 +51,7 @@ pywin32==304 ; sys_platform == "win32" and platform_python_implementation != "Py
 pyzmq==24.0.1 ; python_full_version == "3.10.7"
 requests==2.28.1 ; python_full_version == "3.10.7"
 setuptools-scm==7.0.5 ; python_full_version == "3.10.7"
-setuptools==65.4.0 ; python_full_version == "3.10.7"
+setuptools==66.1.1 ; python_full_version == "3.10.7"
 six==1.16.0 ; python_full_version == "3.10.7"
 stack-data==0.5.1 ; python_full_version == "3.10.7"
 tomli==2.0.1 ; python_full_version == "3.10.7"
